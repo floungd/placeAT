@@ -24,20 +24,20 @@ Es öffnet sich ein weiteres fenster was nach berechtigungen fragt akzeptiere di
 
 <img width="980" height="568" alt="image" src="https://github.com/user-attachments/assets/9ef88d75-346e-4392-970e-fa54a7e692fe" />
 
-Öffne jetzt das script über diesen link:
+**Öffne** jetzt das **script** über diesen link:
 
-<a href="https://github.com/floungd/placeAT/raw/refs/heads/main/script/script.user.js" target="blank">HIER</a>
+**<a href="https://github.com/floungd/placeAT/raw/refs/heads/main/script/script.user.js" target="blank">HIER</a>**
 
 // Zur info: es öffnet die raw file von dem script was in diesem repo zu finden ist, der sourcecode ist einsehbar.
 
-Dann öffnet sich gleich eine Tampermonkey seite:
+Dann **öffnet sich** gleich eine **Tampermonkey** seite:
 
 <img width="2558" height="1360" alt="image" src="https://github.com/user-attachments/assets/1bab6d86-f780-46f2-9753-e07276fe879c" />
 
-Clicke jetzt auf Install!
+**Clicke jetzt auf Install !**
 
-Danach sollte alles funktionieren, über das Plugin kannst du später auch einstellungen machen.
+**Danach sollte alles funktionieren**, über das Plugin kannst du später auch einstellungen machen.
 
-Vergiss nicht deinen browser neu zu laden wenn es ein neues pixelart gibt!
+Vergiss nicht deinen browser **neu** zu **laden wenn** es ein **neues pixelart** gibt!
 
-Bei fragen bugs verbesserungsvorschlägen wende dich an das TileAT team!
+Bei **fragen, bugs, verbesserungsvorschlägen** wende dich an das **TileAT team**!
