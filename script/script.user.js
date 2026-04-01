@@ -4,12 +4,14 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.2
 // @description  user overlay for r/tyles canvas
-// @match        https://www.reddit.com/r/Tyles*
+// @match        *://www.reddit.com*
 // @grant        none
 // ==/UserScript==
 // feel free to use this!
 (function() {
     'use strict';
+
+    console.log("userscript enabled");
 
     const overlaySrc = "https://raw.githubusercontent.com/floungd/placeAT/refs/heads/main/overlay/overlay-01.png"; // your overlay source 
 
