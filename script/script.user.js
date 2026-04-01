@@ -2,11 +2,12 @@
 // @author       floungd
 // @name         r/tyles Overlay for TylesAT
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  user overlay for r/tyles canvas
-// @match        *://*/*
+// @match        https://www.reddit.com/r/Tyles*
 // @grant        none
 // ==/UserScript==
+// feel free to use this!
 (function() {
     'use strict';
 
@@ -35,7 +36,7 @@
         overlay.style.objectFit = "contain";
         overlay.style.pointerEvents = "none";
         overlay.style.imageRendering = "pixelated";
-        overlay.style.opacity = "0.5";
+        overlay.style.opacity = "0.6";
 
         container.appendChild(overlay);
 
