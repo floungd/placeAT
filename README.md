@@ -26,7 +26,7 @@ Es öffnet sich ein weiteres fenster was nach berechtigungen fragt akzeptiere di
 
 **Öffne** jetzt das **script** über diesen link:
 
-**<a href="https://github.com/floungd/placeAT/raw/refs/heads/main/script/script.user.js" target="blank">HIER</a>**
+**-----><a href="https://github.com/floungd/placeAT/raw/refs/heads/main/script/script.user.js" target="blank">HIER</a><-----**
 
 // Zur info: es öffnet die raw file von dem script was in diesem repo zu finden ist, der sourcecode ist einsehbar.
 
