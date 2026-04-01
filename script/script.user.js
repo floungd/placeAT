@@ -1,17 +1,18 @@
 // ==UserScript==
-// @author       floungd
 // @name         r/tyles Overlay for TylesAT
+// @author       floungd
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  user overlay for r/tyles canvas
-// @match        *://www.reddit.com*
+// @match        https://tyles.place/*
+// @match        https://tyles.place
 // @grant        none
 // ==/UserScript==
 // feel free to use this!
 (function() {
     'use strict';
 
-    console.log("userscript enabled");
+    console.log("script started");
 
     const overlaySrc = "https://raw.githubusercontent.com/floungd/placeAT/refs/heads/main/overlay/overlay-01.png"; // your overlay source 
 
