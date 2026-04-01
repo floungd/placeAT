@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  r/tyles overlay for austrian pixlers
-// @match        https://www.reddit.com/r/Tyles*
+// @match        https://garlic-bread.reddit.com/embed*
 // @grant        none
 // ==/UserScript==
 const updateEvery = 30 * 1000;
