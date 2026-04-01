@@ -21,7 +21,7 @@
 
         const container = canvas;
         const overlay = document.createElement("img");
-        overlay.src = overlaySrc;
+        overlay.src = overlaySrc + "?_cb=" + Date.now();
 
         //position
         overlay.style.position = "absolute";
