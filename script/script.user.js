@@ -20,6 +20,8 @@
             return;
         }
 
+        console.log("found canvas!");
+
         const container = canvas;
         const overlay = document.createElement("img");
         overlay.src = overlaySrc + "?" + Date.now();
