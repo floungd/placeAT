@@ -7,7 +7,6 @@
 // @match        *://*/*
 // @grant        none
 // ==/UserScript==
-
 (function() {
     'use strict';
 
@@ -22,7 +21,7 @@
 
         console.log("Canvas gefunden!", canvas);
 
-        const container = canvas.parentElement;
+        const container = canvas;
         const overlay = document.createElement("img");
         overlay.src = overlaySrc;
 
@@ -33,6 +32,9 @@
         overlay.style.top = "0";
         overlay.style.width = "100%";
         overlay.style.height = "100%";
+        overlay.style.maxWidth = "100%";
+        overlay.style.maxHeight = "100%";
+        overlay.style.objectFit = "contain";
         overlay.style.pointerEvents = "none";
         overlay.style.imageRendering = "pixelated";
         overlay.style.opacity = "0.5";
