@@ -1,5 +1,13 @@
+// ==UserScript==
+// @name         Place AT
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  r/tyles overlay for austrian pixlers
+// @match        https://www.reddit.com/r/Tyles*
+// @grant        none
+// ==/UserScript==
 const updateEvery = 30 * 1000;
-const src = "https://place.army/overlay_target.png";
+const src = "https://github.com/floungd/placeAT/blob/main/overlay/overlay.png";
 const style =
   "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 1000px;height: 1000px;";
 
