@@ -10,7 +10,7 @@
 (function() {
     'use strict';
 
-    const overlaySrc = "https://raw.githubusercontent.com/floungd/placeAT/refs/heads/main/overlay/overlay-01.png"; // dein Overlay
+    const overlaySrc = "https://raw.githubusercontent.com/floungd/placeAT/refs/heads/main/overlay/overlay-01.png"; // your overlay source 
 
     function waitForCanvas() {
         const canvas = document.querySelector("#canvas-overlay");
@@ -18,8 +18,6 @@
             setTimeout(waitForCanvas, 500);
             return;
         }
-
-        console.log("Canvas gefunden!", canvas);
 
         const container = canvas;
         const overlay = document.createElement("img");
@@ -41,7 +39,6 @@
 
         container.appendChild(overlay);
 
-        console.log("Overlay hinzugefügt im Container!");
     }
 
     waitForCanvas();
