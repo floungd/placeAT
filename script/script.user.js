@@ -1,51 +1,46 @@
 // ==UserScript==
-// @name         Place AT
+// @author       floungd
+// @name         r/tyles Overlay for TylesAT
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  r/tyles overlay for austrian pixlers
-// @match        https://*/*
+// @description  user overlay for r/tyles canvas
+// @match        *://*/*
 // @grant        none
 // ==/UserScript==
-const updateEvery = 30 * 1000;
-const src = "https://github.com/floungd/placeAT/blob/main/overlay/overlay.png";
-const style =
-  "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 1000px;height: 1000px;";
 
-let overlayImage = null;
-if (window.top !== window.self) {
-  window.addEventListener(
-    "load",
-    () => {
-      const canvasContainer = document
-        .querySelector("garlic-bread-embed")
-        .shadowRoot.querySelector("garlic-bread-canvas")
-        .shadowRoot.querySelector(".container");
-      const canvas = canvasContainer.querySelector("canvas");
+(function() {
+    'use strict';
 
-      overlayImage = document.createElement("img");
-      overlayImage.style = style;
+    const overlaySrc = "https://raw.githubusercontent.com/floungd/placeAT/refs/heads/main/overlay/overlay-01.png"; // dein Overlay
 
-      const updateImage = () => (overlayImage.src = src + "?" + Date.now());
+    function waitForCanvas() {
+        const canvas = document.querySelector("#canvas-overlay");
+        if (!canvas) {
+            setTimeout(waitForCanvas, 500);
+            return;
+        }
 
-      updateImage();
-      setInterval(updateImage, updateEvery);
-      canvasContainer.appendChild(overlayImage);
+        console.log("Canvas gefunden!", canvas);
 
-      const canvasObserver = new MutationObserver((mutations) => {
-        mutations.forEach((mutation) => {
-          if (mutation.type === "attributes") {
-            overlayImage.style.width =
-              mutation.target.getAttribute("width") + "px";
-            overlayImage.style.height =
-              mutation.target.getAttribute("height") + "px";
-          }
-        });
-      });
+        const container = canvas.parentElement;
+        const overlay = document.createElement("img");
+        overlay.src = overlaySrc;
 
-      canvasObserver.observe(canvas, {
-        attributes: true,
-      });
-    },
-    false
-  );
-}
+        //position
+        overlay.style.position = "absolute";
+        overlay.style.zIndex = 9000; //he is over 9000!!!!
+        overlay.style.left = "0";
+        overlay.style.top = "0";
+        overlay.style.width = "100%";
+        overlay.style.height = "100%";
+        overlay.style.pointerEvents = "none";
+        overlay.style.imageRendering = "pixelated";
+        overlay.style.opacity = "0.5";
+
+        container.appendChild(overlay);
+
+        console.log("Overlay hinzugefügt im Container!");
+    }
+
+    waitForCanvas();
+})();
