@@ -32,4 +32,12 @@ Es öffnet sich ein weiteres fenster was nach berechtigungen fragt akzeptiere di
 
 Dann öffnet sich gleich eine Tampermonkey seite:
 
+<img width="2558" height="1360" alt="image" src="https://github.com/user-attachments/assets/1bab6d86-f780-46f2-9753-e07276fe879c" />
 
+Clicke jetzt auf Install!
+
+Danach sollte alles funktionieren, über das Plugin kannst du später auch einstellungen machen.
+
+Vergiss nicht deinen browser neu zu laden wenn es ein neues pixelart gibt!
+
+Bei fragen bugs verbesserungsvorschlägen wende dich an das TileAT team!
