@@ -2,7 +2,7 @@
 // @author       floungd
 // @name         r/tyles Overlay for TylesAT
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  user overlay for r/tyles canvas
 // @match        https://www.reddit.com/r/Tyles*
 // @grant        none
